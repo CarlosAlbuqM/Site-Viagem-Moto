@@ -82,7 +82,7 @@ div.caixa-destaque {
     margin: 10px;
 }
 
-div h2 {
+div h2.texto-destaque {
     color: rgb(255, 255, 255);
     font-family:'Font-Button';
     font-size: 35pt;
@@ -97,10 +97,17 @@ font-family: 'Font-Button';
 font-size: 15pt;
 color: white;
 padding: 20px;
-transition: 0.3s ease-in-out;
+transition: #e97f2c 0.3s ease-in-out;
 }
 .btn1:hover {
     background-color: rgb(0, 0, 0);
 }
 
+/*Ultima Aventura e Dicas para Viagem*/
 
+div.secoes-principais {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
