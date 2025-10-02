@@ -4,6 +4,10 @@
     font-family: 'Font-Button';
     src: url(_Fontes/Montserrat-Bold.ttf);
 }
+@font-face {
+    font-family: 'Font-Second';
+    src: url(_Fontes/Weight.ttf);
+}
 
 * {
     padding: 0;
@@ -28,17 +32,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
+
+.img-logo {
+    width: 35px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}   
 
 header h1 {
     color: white;
     font-size: 20pt;
-    margin: 0;
+    margin-left: 10px;
+    
 }
 
 header h1 span {
-    color: orange;
+    color: #e97f2c;
 }
 
 header nav ul {
@@ -46,19 +61,20 @@ header nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin-right: 20px;
     font-weight: normal;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: orange;
+    color: #e97f2c;
 }
 
 /**/
@@ -103,11 +119,108 @@ transition: #e97f2c 0.3s ease-in-out;
     background-color: rgb(0, 0, 0);
 }
 
-/*Ultima Aventura e Dicas para Viagem*/
+/*Ultima Aventura Dicas para Viagem*/
 
 div.secoes-principais {
     margin-top: 60px;
     display: flex;
     justify-content: center;
     gap: 100px;
+}
+
+section.vPage {
+    display: flex;
+    flex-direction: column;
+}
+
+section.vPage h2 {  
+    margin-bottom: 10px;
+    font-family: 'Font-Button';
+    font-size: 15pt;
+}
+
+section.vPage img {
+    border: 2px solid black
+}
+
+div.cPrincipal {
+    display: flex;
+}   
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+aside h1 {
+    font-family:'Font-Button';
+    font-size: 20pt;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+p.data-p {
+    font-size: 12pt;
+    margin-bottom: 15px;
+    color: #6e6d6dce;
+}
+
+p.p-viagem {
+    font-size: 12pt;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+aside a {
+    margin-top: 5px;
+    color: blue;
+}
+
+/*Ultima Aventura Dicas para Viagem*/
+
+section.vPage2 {
+    display: flex;
+    flex-direction: column;
+}
+
+section.vPage2 h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;  
+    font-family: 'Font-Button';
+    font-size: 15pt;
+}
+
+section.vPage2 p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+}
+
+section.vPage2 a {
+    color: blue;
+}
+
+
+/*Galeria*/
+
+section.galeria {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+
+}
+
+section.galeria h2 {
+    font-size: 20pt;
+    font-family: 'Font-Button';
+    margin-bottom: 10px;
+}
+
+div.galeria-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+    width: 100%;
 }
