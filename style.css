@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Font-Button';
+    font-family: 'Font-Titulo';
     src: url(_Fontes/Montserrat-Bold.ttf);
 }
+
 @font-face {
-    font-family: 'Font-Second';
-    src: url(_Fontes/Weight.ttf);
+    font-family: 'Font-Texto';
+    src: url(_Fontes/Roboto-Light.ttf);
 }
 
 * {
@@ -100,7 +101,7 @@ div.caixa-destaque {
 
 div h2.texto-destaque {
     color: rgb(255, 255, 255);
-    font-family:'Font-Button';
+    font-family:'Font-Titulo';
     font-size: 35pt;
     line-height: 1.1;
     letter-spacing: 3px;
@@ -109,7 +110,7 @@ div h2.texto-destaque {
 .btn1  {
 background-color: #e97f2c;
 text-decoration: none;
-font-family: 'Font-Button';
+font-family: 'Font-Titulo';
 font-size: 15pt;
 color: white;
 padding: 20px;
@@ -135,7 +136,7 @@ section.vPage {
 
 section.vPage h2 {  
     margin-bottom: 10px;
-    font-family: 'Font-Button';
+    font-family: 'Font-Titulo';
     font-size: 15pt;
 }
 
@@ -154,19 +155,21 @@ aside {
 }
 
 aside h1 {
-    font-family:'Font-Button';
+    font-family:'Font-Texto';
     font-size: 20pt;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
 p.data-p {
+    font-family: 'Font-Texto';
     font-size: 12pt;
     margin-bottom: 15px;
     color: #6e6d6dce;
 }
 
 p.p-viagem {
+    font-family: 'Font-Texto';
     font-size: 12pt;
     line-height: 1.4;
     margin-bottom: 5px;
@@ -187,11 +190,12 @@ section.vPage2 {
 section.vPage2 h2 {
     margin-top: 35px;
     margin-bottom: 35px;  
-    font-family: 'Font-Button';
+    font-family: 'Font-Titulo';
     font-size: 15pt;
 }
 
 section.vPage2 p {
+    font-family: 'Font-Texto';
     line-height: 1.4;
     margin-bottom: 10px;
 
@@ -213,8 +217,8 @@ section.galeria {
 
 section.galeria h2 {
     font-size: 20pt;
-    font-family: 'Font-Button';
-    margin-bottom: 10px;
+    font-family: 'Font-Titulo';
+    margin-bottom: 20px;
 }
 
 div.galeria-imagens {
@@ -224,3 +228,65 @@ div.galeria-imagens {
     overflow: hidden;
     width: 100%;
 }
+
+div.galeria-imagens img {
+    width: 210px;
+    object-fit: cover;
+    border: 1px solid ;
+}
+
+div.galeria-navegacao span {
+display: inline-block;
+width: 10px;
+height: 10px;
+border-radius: 50px;
+background-color: #cececece;
+margin: 5px;
+
+}
+
+span.ativo {
+    background-color: #e97f2c;
+}
+
+/*Seção sobre mim*/
+
+section.sobreMim {
+    text-align: left;
+    margin-top: 30px;
+    
+}
+
+.conteudoSobre {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    gap: 20px;
+}
+
+section.sobreMim h2 {
+    font-family: 'Font-Titulo';
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+section.sobreMim p {
+    font-family: 'Font-Texto';
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 11pt;
+    
+}
+
+img.foto-perfil {
+    border-radius:70px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    margin-top: 20px;
+
+}
+
+
+
