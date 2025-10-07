@@ -10,6 +10,11 @@
     src: url(_Fontes/Roboto-Light.ttf);
 }
 
+@font-face {
+    font-family: 'Font-Subtitulo';
+    src: url(_Fontes/Roboto-Bold.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +25,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif;
-    padding-top: 50px;
+}
+
+.container-principal {
+     max-width: 1200px;
+     margin: 0;
+     padding: 0 30px;
 }
 
 .conteudo {
@@ -39,11 +49,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
 }
 
 .img-logo {
-    width: 35px;
+    width: 30px;
 }
 
 .logo-container {
@@ -54,7 +64,7 @@ header {
 
 header h1 {
     color: white;
-    font-size: 20pt;
+    font-size: 15pt;
     margin-left: 10px;
     
 }
@@ -69,6 +79,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     margin-right: 20px;
+    font-size: 14px;
 }
 
 header nav ul li a {
@@ -105,7 +116,7 @@ div.caixa-destaque {
     margin: 10px;
 }
 
-div h2.texto-destaque {
+h2.texto-destaque {
     color: rgb(255, 255, 255);
     font-family:'Font-Titulo';
     font-size: 35pt;
@@ -129,7 +140,7 @@ transition: #e97f2c 0.3s ease-in-out;
 /*Ultima Aventura Dicas para Viagem*/
 
 div.secoes-principais {
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -138,12 +149,14 @@ div.secoes-principais {
 section.vPage {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 section.vPage h2 {  
     margin-bottom: 10px;
-    font-family: 'Font-Titulo';
-    font-size: 15pt;
+    font-family: 'Font-Subtitulo';
+    font-size: 16pt;
+    letter-spacing: 0.5px;
 }
 
 section.vPage img {
@@ -176,8 +189,9 @@ p.data-p {
 
 p.p-viagem {
     font-family: 'Font-Texto';
+    max-width: 500px;
     font-size: 12pt;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 5px;
 }
 
@@ -191,18 +205,21 @@ aside a {
 section.vPage2 {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 section.vPage2 h2 {
     margin-top: 35px;
-    margin-bottom: 35px;  
-    font-family: 'Font-Titulo';
-    font-size: 15pt;
+    margin-bottom: 20px;  
+    font-family: 'Font-Subtitulo'; 
+    font-size: 16pt; 
+    letter-spacing: 0.5px;
 }
 
 section.vPage2 p {
     font-family: 'Font-Texto';
-    line-height: 1.4;
+    max-width: 500px;
+    line-height: 1.5;
     margin-bottom: 10px;
 
 }
@@ -216,14 +233,15 @@ section.vPage2 a {
 
 section.galeria {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     padding: 5px;
 
 }
 
 section.galeria h2 {
-    font-size: 20pt;
-    font-family: 'Font-Titulo';
+    font-size: 18pt;
+    font-family: 'Font-Subtitulo';  
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
 }
 
@@ -259,7 +277,8 @@ span.ativo {
 
 section.sobreMim {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 100px;
+    justify-items: center;
     
 }
 
@@ -272,8 +291,9 @@ section.sobreMim {
 }
 
 section.sobreMim h2 {
-    font-family: 'Font-Titulo';
-    font-size: 20pt;
+    font-family: 'Font-Subtitulo'; 
+    font-size: 16pt; 
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
 }
 
@@ -295,11 +315,21 @@ img.foto-perfil {
 }
 
 /*Rodapé*/
-.rodape-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: #6e6d6dce;
-    padding: 10px;
+
+.rodape {
+    background-color: #000000;
+    padding: 12px;
+    margin-top: 100px;
+
 
 }
+.rodape-container {
+    color: white;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.6;
+    text-align: center;
+}
+
