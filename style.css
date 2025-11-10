@@ -12,8 +12,10 @@
 
 @font-face {
     font-family: 'Font-Subtitulo';
-    src: url(_Fontes/Roboto-Bold.ttf);
+    src: url(_Fontes/Travel.ttf);
 }
+
+html {font-size: 62.5%}
 
 * {
     padding: 0;
@@ -64,7 +66,7 @@ header {
 
 header h1 {
     color: white;
-    font-size: 15pt;
+    font-size: 2.0rem;
     margin-left: 10px;
     
 }
@@ -73,13 +75,21 @@ header h1 span {
     color: #e97f2c;
 }
 
+.nav-desktop {
+    display: flex;
+}
+
+.menu-mobile-icon {
+    display: none;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 header nav ul li a {
@@ -119,7 +129,7 @@ div.caixa-destaque {
 h2.texto-destaque {
     color: rgb(255, 255, 255);
     font-family:'Font-Titulo';
-    font-size: 35pt;
+    font-size: 4.7rem;
     line-height: 1.1;
     letter-spacing: 3px;
 }
@@ -128,7 +138,7 @@ h2.texto-destaque {
 background-color: #e97f2c;
 text-decoration: none;
 font-family: 'Font-Titulo';
-font-size: 15pt;
+font-size: 2.0rem;
 color: white;
 padding: 20px;
 transition: #e97f2c 0.3s ease-in-out;
@@ -152,11 +162,16 @@ section.vPage {
     padding: 0 20px;
 }
 
+aside a {
+  font-size: 1.5rem;
+  font-weight: bold; 
+}
+
 section.vPage h2 {  
     margin-bottom: 10px;
     font-family: 'Font-Subtitulo';
-    font-size: 16pt;
-    letter-spacing: 0.5px;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
 }
 
 section.vPage img {
@@ -175,14 +190,14 @@ aside {
 
 aside h1 {
     font-family:'Font-Texto';
-    font-size: 20pt;
+    font-size: 2.7rem;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
 p.data-p {
     font-family: 'Font-Texto';
-    font-size: 12pt;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     color: #6e6d6dce;
 }
@@ -190,15 +205,12 @@ p.data-p {
 p.p-viagem {
     font-family: 'Font-Texto';
     max-width: 500px;
-    font-size: 12pt;
+    font-size: 1.6rem;
     line-height: 1.5;
     margin-bottom: 5px;
 }
 
-aside a {
-    margin-top: 5px;
-    color: blue;
-}
+
 
 /*Ultima Aventura Dicas para Viagem*/
 
@@ -212,20 +224,23 @@ section.vPage2 h2 {
     margin-top: 35px;
     margin-bottom: 20px;  
     font-family: 'Font-Subtitulo'; 
-    font-size: 16pt; 
-    letter-spacing: 0.5px;
+    font-size: 2.5rem; 
+    letter-spacing: 1.5px;
 }
 
 section.vPage2 p {
     font-family: 'Font-Texto';
+    font-size: 1.6rem;
     max-width: 500px;
     line-height: 1.5;
+
     margin-bottom: 10px;
 
 }
 
 section.vPage2 a {
-    color: blue;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 
@@ -239,9 +254,9 @@ section.galeria {
 }
 
 section.galeria h2 {
-    font-size: 18pt;
+    font-size: 2.9rem;
     font-family: 'Font-Subtitulo';  
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
 }
 
@@ -292,8 +307,8 @@ section.sobreMim {
 
 section.sobreMim h2 {
     font-family: 'Font-Subtitulo'; 
-    font-size: 16pt; 
-    letter-spacing: 0.5px;
+    font-size: 2.5rem; 
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
 }
 
@@ -301,8 +316,12 @@ section.sobreMim p {
     font-family: 'Font-Texto';
     line-height: 1.4;
     margin-bottom: 10px;
-    font-size: 11pt;
+    font-size: 1.5rem;
     
+}
+
+.conteudoSobre a {
+    font-size: 1.5rem;
 }
 
 img.foto-perfil {
@@ -313,6 +332,7 @@ img.foto-perfil {
     margin-top: 20px;
 
 }
+
 
 /*Rodapé*/
 
@@ -325,7 +345,7 @@ img.foto-perfil {
 }
 .rodape-container {
     color: white;
-    font-size: 10pt;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -333,3 +353,41 @@ img.foto-perfil {
     text-align: center;
 }
 
+/* Alteraçao para dispositívos móveis */
+
+@media (max-width: 768px) {
+
+div.secoes-principais {
+    flex-direction: column;    
+}
+
+h2.texto-destaque {
+    font-size: 3.0rem;
+}
+
+.conteudoSobre {
+    flex-direction: column;
+}
+
+
+div.galeria-imagens {
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+div.galera-imagens img {
+    width: 150px;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.menu-mobile-icon {
+    display: flex;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+}
