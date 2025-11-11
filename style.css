@@ -269,6 +269,7 @@ div.galeria-imagens {
     justify-content: center;
     gap: 5px;
     overflow: hidden;
+    position: relative;
     width: 100%;
 }
 
@@ -277,6 +278,7 @@ div.galeria-imagens img {
     object-fit: cover;
     border: 1px solid ;
 }
+
 
 div.galeria-navegacao span {
 display: inline-block;

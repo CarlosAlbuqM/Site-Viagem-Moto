@@ -2,12 +2,12 @@ const galeria = document.querySelector('.galeria-imagens');
 const navegacao = document.querySelector('.galeria-navegacao');
 
 let scrollAmount = 0;
-const scrollSpeed = 215;
+const scrollSpeed = 1;
 let intervalID;
 
 
 function autoScroll() {
-    scrollAmount += scrollSpeed;
+
 
     if (scrollAmount >= galeria.scrollWidth - galeria.clientWidth) {
         scrollAmount = 0;
@@ -22,14 +22,17 @@ function autoScroll() {
 
     galeria.scrollBy({
         left:scrollSpeed,
-        behavior: 'smooth'
+        behavior: 'auto'
+
+
     });
+    scrollAmount += scrollSpeed;
 
     /* galeria.scrollLeft = scrollAmount; */
 }
 
 function startScroll() {
-    intervalID = setInterval(autoScroll, 3000);
+    intervalID = setInterval(autoScroll, 30);
 
 }
 
