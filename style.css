@@ -179,7 +179,10 @@ section.vPage h2 {
 
 section.vPage img {
     border: 2px solid black;
+    max-width: 200px;
+    height: 200px;
     flex-shrink: 0;
+    object-fit: cover;
 }
 
 div.cPrincipal {
@@ -361,9 +364,52 @@ img.foto-perfil {
     text-align: center;
 }
 
+
+/* Estilização dá área contato */
+
+.secao-introducao {
+    margin-top: 130px;
+    text-align: center;
+    margin-bottom: 100px;
+
+
+}
+
+.secao-introducao h2 {
+    font-family: 'Font-Titulo';
+    font-size: 4.5rem;
+}
+
+.secao-introducao p {
+    margin-top: 10px;
+    font-family:'Font-Texto';
+    font-size: 1.5rem;
+}
+
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-grupo {
+    font-family: 'Font-Titulo';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    p
+}
+
+
+
 /* Alteraçao para dispositívos móveis */
 
 @media (max-width: 768px) {
+
 
 div.secoes-principais {
     flex-direction: column;
