@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     font-family: sans-serif;
     background-color: rgb(210, 209, 206);
+    min-width: 320px
 }
 
 .container-principal {
@@ -387,23 +388,67 @@ img.foto-perfil {
 }
 
 .contato-container {
+    box-shadow:
+    inset 0 -3em 3em rgba(120, 121, 120, 0.3),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
     max-width: 600px;
     margin: 0 auto;
+    border-radius: 40px;
 }
 
 .formulario-contato {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+
+}
+
+.btn-contato {
+    font-family: 'Font-Titulo';
+    color: white;
+    font-size: large;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e97f2c;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border:none
+}
+
+.btn-contato:hover{
+    background-color: black;
 }
 
 .campo-grupo {
+    align-items: flex-start;
     font-family: 'Font-Titulo';
     display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-    p
+    flex-direction: row;
+    margin-bottom: 15px;
 }
 
+.campo-grupo label {
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 20%;
+
+}
+.campo-grupo input {
+    width: 100%;
+    padding: 5px;
+}
+
+
+.campo-grupo-vertical {
+    flex-direction: column;
+
+}
+
+.campo-grupo-vertical textarea {
+    width: 100%;
+
+}
 
 
 /* Alteraçao para dispositívos móveis */
@@ -444,4 +489,33 @@ div.galera-imagens img {
     margin-right: 30px;
     cursor: pointer;
 }
+
+/* Media Query da página contato */
+
+.contato-container {
+    margin: 40px;
+
 }
+
+
+.secao-introducao h2 {
+    font-size: 3.2rem
+}
+
+.campo-grupo {
+    flex-direction: column;
+}
+
+
+.campo-grupo label {
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+.campo-grupo input {
+    width: 100%;
+    box-sizing: border-box;
+}
+}
+
