@@ -2,7 +2,7 @@ const galeria = document.querySelector('.galeria-imagens');
 const navegacao = document.querySelector('.galeria-navegacao');
 
 let scrollAmount = 0;
-const scrollSpeed = 1;
+const scrollSpeed = 0.5;
 let intervalID;
 
 
