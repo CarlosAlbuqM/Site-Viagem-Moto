@@ -169,6 +169,13 @@ section.vPage {
 aside a {
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color:#2777d3;
+  transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #001aff;
 }
 
 section.vPage h2 {
@@ -250,8 +257,14 @@ section.vPage2 p {
 section.vPage2 a {
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color:#2777d3;
+  transition: color 0.3s;
 }
 
+section.vPage2 a:hover {
+    color:#001aff
+}
 
 /*Galeria*/
 
@@ -334,6 +347,14 @@ section.sobreMim p {
 
 .conteudoSobre a {
     font-size: 1.5rem;
+    text-decoration: none;
+    color: #2777d3;
+    transition: color 0.3;
+
+}
+
+.conteudoSobre a:hover {
+    color: #001aff;
 }
 
 img.foto-perfil {
@@ -364,6 +385,8 @@ img.foto-perfil {
     line-height: 1.6;
     text-align: center;
 }
+
+
 
 
 /* Estilização dá área contato */
